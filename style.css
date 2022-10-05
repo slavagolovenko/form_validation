@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.2s ease;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgb(180, 180, 255) , rgb(220, 190, 255));
+    overflow: hidden;
+}
+
+.wrapper {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 400px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3)
+}
+
+.wrapper header {
+    padding: 25px;
+    font-size: 25px;
+}
+
+.inputarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.inputarea input {
+    font-size: 15px;
+    margin: 10px;
+    padding: 15px;
+    width: 100%;
+    border: 1px solid rgb(230, 230, 230);
+    outline: none;
+    border-radius: 15px;
+    
+}
+
+.inputarea input:hover {
+    background-color: rgb(253, 253, 253);
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2)
+}
+
+.inputarea button {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin: 30px;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(150, 80, 250)
+}
+
+.inputarea button:hover {
+    background-color: rgb(145, 75, 225);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4)
+}
+
+
+
+.email-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.email-area .error {
+    display: none;
+    width: 100%;
+    color: rgb(190, 40, 40);
+    margin-bottom: 10px;
+}
+
+.password-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.password-area .pass-error {
+    display: none;
+    width: 100%;
+    color: rgb(190, 40, 40);
+    margin-bottom: 10px;
+}
+
+.char-error {
+    display: none;
+    width: 100%;
+    color: rgb(190, 40, 40);
+    margin-bottom: 10px;
+}
+
+.equal-passwords-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.equal-passwords-area .equal-error {
+    display: none;
+    width: 100%;
+    color: rgb(190, 40, 40);
+    margin-bottom: 10px;
+}
+i {
+    margin-right: 10px;
+}
+

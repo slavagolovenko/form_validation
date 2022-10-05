@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signed Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/560feadc4f.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        * {
+            margin:  0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.3s;
+        }
+        
+        body {
+            height: 100vh;
+            background: linear-gradient(rgb(150, 150, 255) , rgb(200, 180, 255));
+            overflow: hidden;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            color: rgb(255, 255, 255);
+            box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+        }
+
+
+        .nav ul{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+
+        .nav ul li{
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .modal {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            width: 700px;
+            background-color: #fff;
+            border-radius: 20px;
+            z-index: 10000;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
+        }
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 200px;
+            color: rgb(150, 150, 255);
+            padding: 40px;
+            border-right: 2px solid rgb(220, 220, 220);
+            height: 100%;
+        }
+
+        .textfield {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px;
+            height: 100%;
+        }
+
+        h3 {
+            font-size: 25px;
+            padding: 10px;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        .bars {
+            display: none;
+            font-size: 30px;
+        }
+
+        @media (max-width: 800px) {
+           
+        .nav ul li{
+            display: none;
+            justify-content: space-around;
+            list-style: none;
+        }
+        
+        .modal {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            height: 350px;
+            width: 350px;
+            background-color: #fff;
+            border-radius: 20px;
+            z-index: 10000;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
+        }
+
+        .icon {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            font-size: 200px;
+            color: rgb(150, 150, 255);
+            padding: 40px;
+            border-right: 2px solid rgb(220, 220, 220);
+            height: 100%;
+        }
+
+        .bars {
+            display: block;
+            font-size: 30px;
+        }
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="nav">
+        <h1>Logo</h1>
+        <ul>
+            <li>Products</li>
+            <li>Reviews</li>
+            <li>About</li>
+            <li>Contact us</li>
+        </ul>
+        <div class="bars">
+            <i class="fa-solid fa-bars"></i></div>
+    </div>
+
+    <div class="container">
+        <div class="modal">
+            <div class="icon">
+                <i class="fa-solid fa-circle-check"></i></div>
+        
+             <div class="textfield">
+                <h3>Congratulations!</h3>
+                <h3>You've successfully signed up</h3>
+            </div>
+            
+            </div>
+    </div>
+    </div>
+
+    <script>
+        const modal = document.querySelector('.modal')
+        const body = document.querySelector('body')
+
+        function showModal() {
+            modal.style = 'display: flex;'
+            body.style.backdropFilter = 'brightness(70%)';
+        }
+
+        setTimeout(showModal, 1500)
+
+        console.log(body);
+
+    </script>
+</body>
+</html>

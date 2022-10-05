@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <script defer src="https://kit.fontawesome.com/560feadc4f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>Sign Up</header>
+        
+            <form action="signedup.html" class="form">
+            <div class="inputarea">
+
+            <div class="email-area">
+                <input type="text" name="email" class="email" placeholder="Enter e-mail or phone number">
+                <div class="error"><i class="fa-solid fa-circle-exclamation"></i>You need to fill out this field</div>
+            </div>
+            
+            <div class="password-area">
+                <input type="password" name="password" class="password" placeholder="Create password">
+                <div class="pass-error"><i class="fa-solid fa-circle-exclamation"></i>You need to create password</div>
+                <div class="char-error"><i class="fa-solid fa-circle-exclamation"></i>The password must contain at least 8 characters</div>
+            </div>
+            
+            <div class="equal-passwords-area">
+                <input type="password" name="password" class="equal-password" placeholder="Confirm password">
+                <div class="equal-error"><i class="fa-solid fa-circle-exclamation"></i>Passwords do not match</div>
+            </div>
+            <button type="submit">Sign Up</button>
+            </div>
+        </div>
+        </form>
+        
+    </div>
+</body>
+</html>
